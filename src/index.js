@@ -4,16 +4,18 @@ import './index.css';
 class Square extends React.Component {
     render() {
       return (
-        <button className="square">
-          {/* TODO */}
+        <button className="square" onClick={() => {alert('click');}}> 
+          {this.props.value} 
         </button>
+        //クリックされたらXを表示したいので、on click プロパティに関数を渡すようにする
+        //Square の render メソッドで、渡された値を表示するよう書き換える
       );
     }
   }
   
   class Board extends React.Component {
     renderSquare(i) {
-      return <Square />;
+      return <Square value={i} />; //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
     }
   
     render() {
