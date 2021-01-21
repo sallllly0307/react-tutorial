@@ -32,7 +32,12 @@ class Square extends React.Component {
 
 
     renderSquare(i) {
-      return <Square value={this.state.Squares[i]} />; //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
+      return (
+        <Square 
+          value={this.state.Squares[i]}
+          onClick={() => this.handleClick(i)}
+        />
+      ); //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
     }
   
     render() {
