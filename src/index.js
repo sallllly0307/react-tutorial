@@ -23,8 +23,16 @@ class Square extends React.Component {
   }
   
   class Board extends React.Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        Squares: Array(9).fill(null),
+      };
+    }
+
+
     renderSquare(i) {
-      return <Square value={i} />; //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
+      return <Square value={this.state.Squares[i]} />; //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
     }
   
     render() {
