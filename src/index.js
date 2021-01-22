@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 function Square(props) {
       return (
-        <button 
-          className="square" 
-          onClick={() => this.props.onClick()}
-        > 
+        <button className="square"  onClick={() => this.props.onClick()}> 
           {this.props.value} 
         </button>
         //クリックされたらXを表示したいので、on click プロパティに関数を渡すようにする
@@ -42,9 +39,14 @@ function Square(props) {
     }
   
     render() {
-      const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-      //どちらのプレイヤーの手番なのかを表示する
-
+      const winner = calculateWinner(this.state.squares);
+      let status;
+      if (winner){
+        status = 'Winner: ' + winner;
+      } else{
+        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      }
+      
       return (
         <div>
           <div className="status">{status}</div>
