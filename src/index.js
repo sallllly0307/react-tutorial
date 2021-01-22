@@ -17,22 +17,23 @@ class Square extends React.Component {
   }
   
   class Board extends React.Component {
-    constructor(props){
+    constructor(props) {
       super(props);
       this.state = {
-        Squares: Array(9).fill(null),
+        squares: Array(9).fill(null),
       };
     }
+  
     handleClick(i) {
-      const Squares = this.state.squares.slice();
-      squares(i) = 'X';
+      const squares = this.state.squares.slice();
+      squares[i] = 'X';
       this.setState({squares: squares});
     }
-
+  
     renderSquare(i) {
       return (
-        <Square 
-          value={this.state.Squares[i]}
+        <Square
+          value={this.state.squares[i]}
           onClick={() => this.handleClick(i)}
         />
       ); //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
