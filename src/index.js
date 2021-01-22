@@ -23,7 +23,11 @@ class Square extends React.Component {
         Squares: Array(9).fill(null),
       };
     }
-
+    handleClick(i) {
+      const Squares = this.state.squares.slice();
+      squares(i) = 'X';
+      this.setState({squares: squares});
+    }
 
     renderSquare(i) {
       return (
