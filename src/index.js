@@ -43,8 +43,9 @@ function Square(props) {
     }
   
     render() {
-      const status = 'Next player: X';
-  
+      const status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      //どちらのプレイヤーの手番なのかを表示する
+      
       return (
         <div>
           <div className="status">{status}</div>
