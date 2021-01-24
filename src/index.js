@@ -19,7 +19,7 @@ function Square(props) {
         xIsNext: true,
       };
     }
-  
+
     handleClick(i) {
       const squares = this.state.squares.slice();
       if (calculateWinner(squares) || squares[i]) {
@@ -35,24 +35,15 @@ function Square(props) {
     renderSquare(i) {
       return (
         <Square
-          value={this.state.squares[i]}
-          onClick={() => this.handleClick(i)}
+          value={this.props.squares[i]}
+          onClick={() => this.props.onClick(i)}
         />
       ); //Board の renderSquare メソッド内で、props として value という名前の値を Square に渡す
     }
   
     render() {
-      const winner = calculateWinner(this.state.squares);
-      let status;
-      if (winner){
-        status = 'Winner: ' + winner;
-      } else {
-        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-      }
-      
       return (
         <div>
-          <div className="status">{status}</div>
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}
@@ -77,19 +68,33 @@ function Square(props) {
     constructor(props) {
       super(props);
       this.state = {
-        histry: [{
-          squares: Array(9).fill(null),
+        history: [{
+          squares: Array(9).fill(null)
         }],
-        xIsNext: true,
+        xIsNext: true
       };
     }
 
 
     render() {
+      const history = this.state.history;
+      const current = history[history.length - 1];
+      const winner = calculateWinner(current.squares);
+      let status;
+      if (winner) {
+          status = 'Winner: ' + winner;
+        } else {
+          status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        }
+
+
       return (
         <div className="game">
           <div className="game-board">
-            <Board />
+            <Board 
+              squares={current.squares}
+              onClick={(i)=>this.handleClick(i)}
+            />
           </div>
           <div className="game-info">
             <div>{/* status */}</div>
