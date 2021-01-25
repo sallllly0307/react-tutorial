@@ -78,7 +78,7 @@ function Square(props) {
 
       const moves = histry.map((step, move) => {
         const desc = move ?
-        'Go to move #' move :
+        'Go to move #' + move :
         'Go to game start';
       return (
         <li>
