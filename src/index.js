@@ -68,7 +68,15 @@ function Square(props) {
         history: history.concat([{
           squares: squares
         }]),
+        stepNumber: history.length,
         xIsNext: !this.state.xIsNext,
+      });
+    }
+
+    jumpTo(step) {
+      this.setState({
+        stepNumber: step,
+        xIsNext: (step % 2) === 0,
       });
     }
 
@@ -77,7 +85,7 @@ function Square(props) {
       const current = history[history.length - 1];
       const winner = calculateWinner(current.squares);
 
-      const moves = histry.map((step, move) => {
+      const moves = history.map((step, move) => {
         const desc = move ?
         'Go to move #' + move :
         'Go to game start';
