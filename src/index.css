@@ -9,6 +9,11 @@ ul {
   padding-left: 30px;
 }
 
+li,
+button {
+  color: #078080;
+}
+
 .board-row:after {
   clear: both;
   content: "";
@@ -54,4 +59,5 @@ ul {
 
 .game-info {
   margin-left: 20px;
+  color: #078080;
 }
