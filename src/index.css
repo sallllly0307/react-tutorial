@@ -6,12 +6,25 @@ body {
 
 ol,
 ul {
-  padding-left: 30px;
+  padding-left: 0px;
+  max-width: 70vw;
 }
 
 li,
 button {
   color: #078080;
+  width: 140px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, box-shadow 0.1s ease-out;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .board-row:after {
@@ -28,6 +41,7 @@ button {
   background: #f8f5f2;
   border: 2px solid #232323;
   float: left;
+  color: #078080;
   font-size: 48px;
   font-weight: bold;
   line-height: 34px;
