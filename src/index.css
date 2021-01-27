@@ -37,6 +37,10 @@ ul {
 .square:focus {
   outline: #f45d48 solid 2px;
 }
+.square:after {
+  pointer-events: none;
+}
+/*埋まっているマスにカーソルが当たらないようにしたいけどうまくいかない*/
 
 .kbd-navigation .square:focus {
   border: 2px;
