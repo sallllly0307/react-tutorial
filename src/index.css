@@ -1,5 +1,5 @@
 body {
-  font: 32px "Century Gothic", Futura, sans-serif;
+  font: 32px 'Century Gothic', Futura, sans-serif;
   color: #232323;
   margin: 20px;
 }
@@ -29,7 +29,7 @@ button {
 
 .board-row:after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 

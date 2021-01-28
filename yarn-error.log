@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add @types/styled-commponents babel-plugin-styled-components --dev
+  /usr/local/bin/node /usr/local/bin/yarn add -D perttier
 
 PATH: 
   /Users/saraaoki/.pyenv/shims:/Users/saraaoki/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin:/Users/saraaoki/flutter/bin:/Users/saraaoki/.fzf/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fstyled-commponents: Not found
+  Error: https://registry.yarnpkg.com/perttier: Not found
       at Request.params.callback [as _callback] (/Users/saraaoki/.config/yarn/global/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/Users/saraaoki/.config/yarn/global/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:315:20)
