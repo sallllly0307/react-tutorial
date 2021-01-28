@@ -10,9 +10,9 @@ ul {
   max-width: 70vw;
 }
 
-li,
 button {
-  color: #078080;
+  color: #ffffff;
+  background-color: #078080;
   width: 140px;
   height: 52px;
   border: none;
@@ -73,5 +73,5 @@ button {
 
 .game-info {
   margin-left: 20px;
-  color: #232323;
+  color: #078080;
 }
