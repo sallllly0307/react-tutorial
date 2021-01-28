@@ -27,6 +27,11 @@ button {
   text-align: center;
 }
 
+button:focus {
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 85%), 0 0 0 4px rgb(154 180 210 / 90%);
+  outline: none;
+}
+
 .board-row:after {
   clear: both;
   content: '';
@@ -56,10 +61,6 @@ button {
 .square:focus {
   outline: #f45d48 solid 2px;
 }
-.square:after {
-  pointer-events: none;
-}
-/*埋まっているマスにカーソルが当たらないようにしたいけどうまくいかない*/
 
 .kbd-navigation .square:focus {
   border: 2px;
