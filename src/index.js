@@ -8,6 +8,7 @@ function Square(props) {
     } else {
         isDisabled = true;
     }
+        //XやOが入っているマスは選択できなくする
     return (
         <button className="square" disabled={isDisabled} onClick={props.onClick}>
             {props.value}
