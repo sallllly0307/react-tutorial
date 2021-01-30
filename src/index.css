@@ -25,6 +25,7 @@ button {
   transition: background-color 0.2s ease-out, box-shadow 0.1s ease-out;
   vertical-align: middle;
   text-align: center;
+  font-size: 14px;
 }
 
 button:focus {
