@@ -10,7 +10,7 @@ ul {
   max-width: 70vw;
 }
 
-.button {
+.primary-button {
   color: #ffffff;
   background-color: #078080;
   width: 140px;
@@ -28,7 +28,7 @@ ul {
   font-size: 14px;
 }
 
-button {
+.ghost-button {
   color: #078080;
   border: 1px solid #078080;
   background-color: #f8f5f2;
