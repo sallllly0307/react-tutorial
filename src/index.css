@@ -28,6 +28,24 @@ button {
   font-size: 14px;
 }
 
+.ghost-button {
+  color: #232323;
+  border: 1px solid #078080;
+  width: 140px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out, box-shadow 0.1s ease-out;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+}
+
 button:focus {
   box-shadow: 0 0 0 2px rgb(255 255 255 / 85%), 0 0 0 4px rgb(154 180 210 / 90%);
   outline: none;
