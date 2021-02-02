@@ -10,10 +10,6 @@ ul {
   max-width: 70vw;
 }
 
-.media (prefers-color-scheme: dark) {
-  .day{background-color: #f8f5f2;}
-  .night{background-color: rgb(55 57 62 / 100%);}
-
 .primary-button {
   color: #ffffff;
   background-color: #078080;
