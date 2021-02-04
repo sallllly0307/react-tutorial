@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './Theme.js'
 function Square(props) {
     console.log(props);
     let isDisabled = false;
