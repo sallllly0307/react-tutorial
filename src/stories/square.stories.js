@@ -2,6 +2,6 @@ import React from 'react';
 import { Square } from './Square';
 
 export default {
-    title: 'Square',
+    title: 'react-tutorial/Square',
     component: Square,
   };

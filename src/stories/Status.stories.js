@@ -2,6 +2,6 @@ import React from 'react';
 import { Status } from './status';
 
 export default {
-  title: 'Header/Status',
+  title: 'react-tutorial/Status',
   component: Status,
 };
