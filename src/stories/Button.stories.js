@@ -2,7 +2,7 @@ import React from 'react';
 import './button.css';
 
 export default {
-    title: 'Button',
+    title: 'react-tutorial/Button',
     component: 'button',
   };
   

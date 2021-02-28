@@ -1,0 +1,14 @@
+body {
+    font: 32px 'Century Gothic', Futura, sans-serif;
+    color: #232323;
+    margin: 20px;
+  }  
+
+.status {
+    margin-bottom: 10px;
+  }
+
+.game-info {
+    margin-left: 20px;
+    color: #078080;
+  }
