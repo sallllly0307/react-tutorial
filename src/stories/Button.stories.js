@@ -3,7 +3,7 @@ import './button.css';
 
 export default {
     title: 'react-tutorial/Button',
-    component: 'button',
+    component: 'Main/button',
   };
   
   const Template = (args) => <button {...args} />;
